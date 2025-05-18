@@ -139,7 +139,7 @@ const HomePage: React.FC = () => {
                 <a href="#blog" className="text-white font-medium hover:underline"> {/* Assuming Blog/Insights section */}
                     Insights
                 </a>
-                <a href="#contact" className="text-white font-medium hover:underline"> {/* Assuming Contact section */}
+                <a href="/contact" className="text-white font-medium hover:underline"> {/* Assuming Contact section */}
                     Contact
                 </a>
                 </nav>
@@ -593,8 +593,8 @@ const HomePage: React.FC = () => {
                             </li>
                         </ul>
                     </div>
-                    {/* Contact Info */}
-                    <div>
+                   
+                    {/* <div>
                         <h3 className="font-bold mb-4 text-white">Contact</h3> 
                         <ul className="space-y-2 text-sm">
                             <li className="flex items-center gap-2">
@@ -616,7 +616,7 @@ const HomePage: React.FC = () => {
                                 <span className="text-gray-400">+1 (555) 987-6543</span> 
                             </li>
                             <li className="flex items-center gap-2">
-                                {/* Placeholder Icon */}
+                              
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="24"
@@ -654,7 +654,7 @@ const HomePage: React.FC = () => {
                                 <span className="text-gray-400">456 Sustainability Ave, Suite 200, Capital City, State 67890</span> 
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center"> 
                     <p className="text-sm text-gray-500">© 2025 GreenGov. All Rights Reserved.</p> 
