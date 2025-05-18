@@ -295,7 +295,7 @@ const HomePage: React.FC = () => {
         </section>
 
         {/* Commitment Section (Driving Tangible Impact) - Retained structure, updated content */}
-        <section className="py-12 px-4 md:px-6 bg-green-800 text-white"> {/* Retained color */}
+        <section ref={commitmentRef} className="py-12 px-4 md:px-6 bg-green-800 text-white"> {/* Retained color */}
             <div className="container grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="flex flex-col justify-center space-y-4">
                     <h2 className="text-3xl font-bold">Driving Tangible Impact in Public Sector Sustainability</h2> {/* Updated Heading */}
