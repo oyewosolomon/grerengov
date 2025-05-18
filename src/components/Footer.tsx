@@ -1,40 +1,6 @@
-import React, { useRef } from 'react';
-import { motion } from 'framer-motion';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
-import { Textarea } from './ui/textarea'; 
-import { Label } from './ui/label'; 
-import { Card, CardContent } from './ui/card';
-import Header from './Header';
-
+import React from 'react';
 const Footer: React.FC = () => {
-  // Ref for the main container for entrance animation
-  const containerRef = useRef<HTMLDivElement>(null);
 
-  // Animation variants for staggered appearance
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1, // Delay between animating children
-      },
-    },
-  };
-
-  // Animation variants for individual elements
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
-
-  // Placeholder for form submission logic
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    // TODO: Implement actual form submission logic (e.g., send data to a backend API)
-    console.log('Form submitted!');
-    // You would typically collect form data here and send it
-  };
 
   return (
     <footer className="bg-gray-900 py-12 px-4 rounded-b-xl md:px-6 text-gray-300"> 

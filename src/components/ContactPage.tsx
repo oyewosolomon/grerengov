@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Button } from './ui/button'; // Assuming shadcn/ui Button component
-import { Input } from './ui/input'; // Assuming shadcn/ui Input component
-import { Textarea } from './ui/textarea'; // Assuming shadcn/ui Textarea component
-import { Label } from './ui/label'; // Assuming shadcn/ui Label component
-import { Card, CardContent } from './ui/card'; // Assuming shadcn/ui Card components
-import Header from './Header'; // Assuming Header component exists
-import Footer from './Footer'; // Assuming Footer component exists
+import { Button } from './ui/button';
+import { Input } from './ui/input'; 
+import { Textarea } from './ui/textarea'; 
+import { Label } from './ui/label';
+import { Card, CardContent } from './ui/card'; 
+import Header from './Header'; 
+import Footer from './Footer'; 
 
 const ContactPage: React.FC = () => {
   // Ref for the main container for entrance animation
