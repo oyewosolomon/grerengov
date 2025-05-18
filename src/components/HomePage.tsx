@@ -507,7 +507,7 @@ const blogPosts: BlogPost[] = [
         </section>
 
         {/* Bottom Banner (e.g., highlighting a specific outcome or offer) - Adapted for GreenGov */}
-        <section ref={bottomBannerRef} className="relative py-24 mt-10 bg-[#F3752B] text-white overflow-hidden rounded-2xl"> {/* Adjusted color and added rounded corner */}
+        <section ref={bottomBannerRef} className="relative py-24 mt-10 bg-[#F3752B] text-white overflow-hidden rounded-t-2xl"> {/* Adjusted color and added rounded corner */}
             {/* Background graphic or animation */}
             <div className="container mx-auto px-6 z-10 flex flex-col md:flex-row items-center justify-between">
                 <div className="md:w-2/3 mb-8 md:mb-0">
