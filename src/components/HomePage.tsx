@@ -102,33 +102,7 @@ const HomePage: React.FC = () => {
     image: string;
     link: string; // Assuming each blog post has a link
   }
-  // Array containing blog post data
-const blogPosts: BlogPost[] = [
-    {
-      id: 1,
-      title: "Navigating Green Regulations: A Government Guide",
-      description: "Understand the latest environmental regulations and how your agency can achieve compliance efficiently.",
-      date: "May 16, 2025",
-      image: "/assets/blog-1.jpg", 
-      link: "#", 
-    },
-    {
-      id: 2,
-      title: "Top 5 Green Technologies for Public Infrastructure",
-      description: "Explore innovative technologies that can transform public infrastructure and reduce environmental impact.",
-      date: "May 10, 2025",
-      image: "/assets/hero-bg.jpg", // Placeholder image
-      link: "#", // Replace with actual link
-    },
-    {
-      id: 3,
-      title: "Measuring Your Agency's Carbon Footprint",
-      description: "Learn how to accurately measure and report your government body's carbon emissions.",
-      date: "May 01, 2025",
-      image: "/assets/carbon.svg", 
-      link: "#", 
-    }    
-  ];
+
   return (
     <div className="flex flex-col min-h-screen">
 
@@ -460,33 +434,6 @@ const blogPosts: BlogPost[] = [
             </div>
         </section>
 
-        {/* Blog / Insights Section - Adapted for GreenGov */}
-        <section ref={blogRef} className="py-12 px-4 md:px-6 bg-gray-100"> {/* Adjusted background */}
-           <div className="container">
-                <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Insights & Resources for Government Sustainability</h2> {/* Updated Heading */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {/* Map over the blogPosts array to render blog cards */}
-                    {blogPosts.map((post) => (
-                       <motion.div
-                           key={post.id} // Use unique id as key
-                           initial={{ opacity: 0, y: 50 }}
-                           whileInView={{ opacity: 1, y: 0 }}
-                           viewport={{ once: true }}
-                           transition={{ duration: 0.7, delay: post.id * 0.15 }} // Stagger delay by id
-                           className="bg-white rounded-lg shadow-md overflow-hidden blog-card" // Added blog-card class for GSAP
-                       >
-                           <img src={post.image} alt={post.title} className="w-full h-48 object-cover"/> {/* Use image from object */}
-                           <div className="p-6">
-                                <h3 className="text-xl font-semibold text-gray-800 mb-2">{post.title}</h3> {/* Use title from object */}
-                                <p className="text-gray-600 text-sm mb-4">Published on {post.date}</p> {/* Use date from object */}
-                                <p className="text-gray-700 mb-4">{post.description}</p> {/* Use description from object */}
-                                <a href={post.link} className="text-green-700 font-semibold hover:underline">Read More</a> {/* Use link from object */}
-                           </div>
-                       </motion.div>
-                    ))}
-                </div>
-           </div>
-        </section>
 
         {/* Mid-Page CTA Banner - Adapted for GreenGov */}
         <section ref={ctaBannerRef} className="py-20 bg-green-800 text-white text-center"> {/* Retained color */}
